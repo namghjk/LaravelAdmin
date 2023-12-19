@@ -15,7 +15,7 @@ Route::middleware(['auth'])->group(function () {
     Route::prefix('admin')->group(function () {
         Route::get('/', [MainController::class, 'index'])->name('admin');
         Route::get('main', [MainController::class, 'index']);
-
+        Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
         Route::prefix('menus')->group(function () {
             Route::get('add', [MenuController::class, 'create']);
             Route::post('add', [MenuController::class, 'store']);

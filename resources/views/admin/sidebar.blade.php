@@ -14,7 +14,11 @@
                 <img src="/template/admin/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Alexander Pierce</a>
+                <div class="row align-items-center">
+                    <div class="col-auto">
+                        <a href="#" class="d-block">Alexander Pierce</a>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -61,8 +65,12 @@
                     </ul>
                 </li>
 
+                
         </nav>
         <!-- /.sidebar-menu -->
+        <li class='nav-item'>
+            <a href="{{route('logout')}}"  class="nav-link btn  btn-danger mt-4 d-block  w-100  text-center   "> Đăng xuất</a>
+        </li>
     </div>
     <!-- /.sidebar -->
 </aside>
